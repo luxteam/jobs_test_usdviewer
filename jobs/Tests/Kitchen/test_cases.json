@@ -1,0 +1,15 @@
+[
+    {
+        "name": "RS_VIEW_K_001",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "..",
+        "uiConfig": "..",
+        "script_info": [
+            "First test case"
+        ],
+        "skip_on": [
+        ]
+    }
+]
