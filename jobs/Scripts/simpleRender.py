@@ -42,10 +42,17 @@ def get_images_list(work_dir):
 def main():
     args = create_args_parser()
 
+    work_dir = os.path.abspath(args.output_dir)
+
+    if not os.path.exists(os.path.join(args.output_dir, "Color")):
+        os.makedirs(os.path.join(args.output_dir, "Color"))
+    if not os.path.exists(os.path.join(args.output_dir, "render_tool_logs")):
+        os.makedirs(os.path.join(args.output_dir, "render_tool_logs"))
+
     try:
-        test_cases_path = os.path.realpath(os.path.join(os.path.abspath(args.output_dir), 'test_cases.json'))
+        test_cases_path = os.path.realpath(os.path.join(work_dir, 'test_cases.json'))
         shutil.copyfile(args.tests_list, test_cases_path)
-    except:
+    except Exception as e:
         main_logger.error("Can't copy test_cases.json")
         main_logger.error(str(e))
         exit(-1)
@@ -81,12 +88,12 @@ def main():
 
     # save pre-defined reports with error status
     for test in tests_list:
-        report = core_config.RENDER_REPORT_BASE.copy()
+        report = RENDER_REPORT_BASE.copy()
         is_skipped = is_case_skipped(test, current_conf)
         test_status = TEST_IGNORE_STATUS if is_skipped else TEST_CRASH_STATUS
 
-        main_logger.info("Case: {}; Engine: {}; Skip here: {}; Predefined status: {};".format(
-            test['name'], engine, bool(is_skipped), test_status
+        main_logger.info("Case: {}; Skip here: {}; Predefined status: {};".format(
+            test['name'], bool(is_skipped), test_status
         ))
         report.update({'test_status': test_status,
                        'render_device': render_device,
@@ -141,8 +148,6 @@ def main():
     with open(test_cases_path, 'w') as file:
         json.dump(tests_list, file, indent=4)
 
-    work_dir = os.path.abspath(args.output)
-
     # run cases
     for test in [x for x in tests_list if x['status'] == 'active' and not is_case_skipped(x, current_conf)]:
         main_logger.info("\nProcessing test case: {}".format(test['name']))
@@ -174,11 +179,12 @@ def main():
                         script_parts.append("-f {}:{}".format(test["start_frame"], test["end_frame"]))
                 else:
                     script_parts.append("-f {}".format(test["start_frame"]))
-            script_parts.append(test["scene_sub_path"])
+            script_parts.append(os.path.normpath(os.path.join(args.scene_path, test['scene_sub_path'])))
             if "start_frame" in test or "end_frame" in test:
-                key = if "end_frame" in test "end_frame" else "start_frame"
-                script_parts.append(os.path.join(work_dir, 
-                    "img{}.{}".format(str(math.floor(test[key])).rjust(5, "0"), str(test[key] % 1).ljust(5, "0")) + test["file_ext"]))
+                key = "end_frame" if "end_frame" in test else "start_frame"
+                target_image_name = os.path.join(work_dir, 
+                    "img{}.{}".format(str(math.floor(test[key])).rjust(5, "0"), str(test[key] % 1).ljust(5, "0")) + test["file_ext"])
+                script_parts.append(os.path.join("img#####.#####" + test["file_ext"]))
             else:
                 target_image_name = "img" + test["file_ext"]
                 script_parts.append(os.path.join(work_dir, target_image_name))
@@ -186,8 +192,8 @@ def main():
             script = " ".join(script_parts)
 
             cmd_script_path = os.path.join(work_dir, "script.bat")
-            with open(cmdScriptPath, "w") as f:
-                f.write(cmdRun)
+            with open(cmd_script_path, "w") as f:
+                f.write(script)
 
             p = psutil.Popen(cmd_script_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
             stderr, stdout = b"", b""
@@ -223,12 +229,14 @@ def main():
 
             found_images = get_images_list(work_dir)
 
-            with open(os.path.join(args.output_dir, test["name"] + ".log"), 'a') as file:
+            log_path = os.path.join(work_dir ,"render_tool_logs", test["name"] + ".log")
+
+            with open(log_path, 'a') as file:
                 file.write("-----[TRY #{}]------\n\n".format(i - 1))
                 file.write("-----[STDOUT]------\n\n")
                 file.write(stdout.decode("UTF-8"))
                 file.write("\n-----[FOUND IMAGES]-----\n")
-                file.write(found_images)
+                file.write(str(found_images))
                 file.write("\n-----[STDERR]-----\n\n")
                 file.write(stderr.decode("UTF-8"))
                 file.write("\n\n")
@@ -246,9 +254,10 @@ def main():
                 test_case_report["message"] = test_case_report["message"] + error_messages
             test_case_report["test_status"] = test_case_status
             test_case_report["render_time"] = render_time
-            test_case_report["render_log"] = path.join("render_tool_logs", test["name"] + ".log")
+            test_case_report["render_log"] = log_path
             test_case_report["group_timeout_exceeded"] = False
             test_case_report["testcase_timeout_exceeded"] = aborted_by_timeout
+            test_case_report["testing_start"] = datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 
         with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "w") as file:
             json.dump([test_case_report], file, indent=4)
