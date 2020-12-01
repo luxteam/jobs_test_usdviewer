@@ -26,7 +26,6 @@ def create_args_parser():
     parser.add_argument('--output_dir', required=True)
     parser.add_argument('--render_engine', required=True)
     parser.add_argument('--scene_path', required=True)
-    parser.add_argument('--render_path', required=True, metavar="<path>")
     parser.add_argument('--test_group', required=True)
     parser.add_argument('--retries', required=False, default=2, type=int)
     parser.add_argument('--update_refs', required=True)
@@ -212,7 +211,7 @@ def main():
             render_time = time.time() - start_time
             error_messages = []
             try:
-                shutil.copyfile(os.path.join(args.render_path, target_image_name),
+                shutil.copyfile(os.path.join(work_dir, target_image_name),
                             os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"]))
                 test_case_status = TEST_SUCCESS_STATUS
             except FileNotFoundError as err:
