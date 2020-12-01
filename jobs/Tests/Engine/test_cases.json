@@ -5,14 +5,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "low",
-        "colorCorrectionMode": "sRGB",
         "renderer": "RPR",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "RPR Low"
         ],
@@ -25,14 +20,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "medium",
-        "colorCorrectionMode": "sRGB",
         "renderer": "RPR",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "RPR Medium"
         ],
@@ -45,14 +35,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "high",
-        "colorCorrectionMode": "sRGB",
         "renderer": "RPR",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "RPR High"
         ],
@@ -65,14 +50,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "veryhigh",
-        "colorCorrectionMode": "sRGB",
         "renderer": "RPR",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "RPR Very High"
         ],
@@ -85,14 +65,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "low",
-        "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "GL Low"
         ],
@@ -105,14 +80,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "medium",
-        "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "GL Medium"
         ],
@@ -125,14 +95,8 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "high",
-        "colorCorrectionMode": "sRGB",
         "renderer": "GL",
-        "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "GL High"
         ],
@@ -145,14 +109,9 @@
         "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "width": 1000,
         "complexity": "veryhigh",
-        "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "end_frame": 2,
-        "step": 1,
-        "camera": 1,
         "script_info": [
             "GL Very High"
         ],
