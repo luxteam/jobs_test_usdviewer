@@ -2,6 +2,7 @@
     {
         "name": "RS_VIEW_K_001",
         "status": "active",
+        "file_ext": ".jpg",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "width": 1000,
