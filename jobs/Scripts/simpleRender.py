@@ -39,45 +39,27 @@ def get_images_list(work_dir):
     return found_images
 
 
-def main():
-    args = create_args_parser()
-
-    work_dir = os.path.abspath(args.output_dir)
-
-    if not os.path.exists(os.path.join(args.output_dir, "Color")):
-        os.makedirs(os.path.join(args.output_dir, "Color"))
-    if not os.path.exists(os.path.join(args.output_dir, "render_tool_logs")):
-        os.makedirs(os.path.join(args.output_dir, "render_tool_logs"))
-
+def copy_baselines(test, baseline_path, baseline_path_tr):
     try:
-        test_cases_path = os.path.realpath(os.path.join(work_dir, 'test_cases.json'))
-        shutil.copyfile(args.tests_list, test_cases_path)
-    except Exception as e:
-        main_logger.error("Can't copy test_cases.json")
-        main_logger.error(str(e))
-        exit(-1)
+        shutil.copyfile(os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX),
+                 os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX))
 
-    try:
-        with open(test_cases_path, 'r') as file:
-            tests_list = json.load(file)
-    except OSError as e:
-        main_logger.error("Failed to read test cases json. ")
-        main_logger.error(str(e))
-        exit(-1)
+        with open(os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX)) as baseline:
+            baseline_json = json.load(baseline)
 
-    render_device = get_gpu()
-    system_pl = platform.system()
-    current_conf = set(platform.system()) if not render_device else {platform.system(), render_device}
-    main_logger.info("Detected GPUs: {}".format(render_device))
-    main_logger.info("PC conf: {}".format(current_conf))
-    main_logger.info("Creating predefined errors json...")
+        for thumb in [''] + THUMBNAIL_PREFIXES:
+            if os.path.exists(os.path.join(baseline_path_tr, baseline_json[thumb + 'render_color_path'])):
+                shutil.copyfile(os.path.join(baseline_path_tr, baseline_json[thumb + 'render_color_path']),
+                         os.path.join(baseline_path, baseline_json[thumb + 'render_color_path']))
+    except:
+        main_logger.error('Failed to copy baseline ' +
+                                      os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX))
 
-    if system_pl == "Windows":
-        baseline_path_tr = os.path.join(
-            'c:/TestResources/usd_viewer_autotests_baselines', args.test_group)
-    else:
-        baseline_path_tr = os.path.expandvars(os.path.join(
-            '$CIS_TOOLS/../TestResources/usd_viewer_autotests_baselines', args.test_group))
+
+def prepare_cases(args, tests_list, render_device, current_conf):
+
+    baseline_path_tr = os.path.join(
+        'c:/TestResources/usd_viewer_autotests_baselines', args.test_group)
 
     baseline_path = os.path.join(
         args.output_dir, os.path.pardir, os.path.pardir, os.path.pardir, 'Baseline', args.test_group)
@@ -86,7 +68,6 @@ def main():
         os.makedirs(baseline_path)
         os.makedirs(os.path.join(baseline_path, 'Color'))
 
-    # save pre-defined reports with error status
     for test in tests_list:
         report = RENDER_REPORT_BASE.copy()
         is_skipped = is_case_skipped(test, current_conf)
@@ -103,7 +84,7 @@ def main():
                        'file_name': test['name'] + test['file_ext'],
                        'script_info': test['script_info'],
                        'test_group': args.test_group,
-                       'render_color_path': 'Color/' + test['name'] + test['file_ext'],
+                       'render_color_path': os.path.join('Color', test['name'] + test['file_ext']),
                        'width': test.get('width', 960),
                        'complexity': test.get('complexity', 'low'),
                        'colorCorrectionMode': test.get('colorCorrectionMode', 'sRGB'),
@@ -115,22 +96,9 @@ def main():
                        'testcase_timeout': test['render_time']
                        })
 
-        # TODO move to jobs_launcher
         if 'Update' not in args.update_refs:
-            try:
-                shutil.copyfile(os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX),
-                         os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX))
-
-                with open(os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX)) as baseline:
-                    baseline_json = json.load(baseline)
-
-                for thumb in [''] + THUMBNAIL_PREFIXES:
-                    if os.path.exists(os.path.join(baseline_path_tr, baseline_json[thumb + 'render_color_path'])):
-                        shutil.copyfile(os.path.join(baseline_path_tr, baseline_json[thumb + 'render_color_path']),
-                                 os.path.join(baseline_path, baseline_json[thumb + 'render_color_path']))
-            except:
-                main_logger.error('Failed to copy baseline ' +
-                                              os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX))
+            # TODO move to jobs_launcher
+            copy_baselines(test, baseline_path, baseline_path_tr)
 
         if test_status == TEST_IGNORE_STATUS:
             report.update({'group_timeout_exceeded': False})
@@ -145,55 +113,57 @@ def main():
         with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "w") as file:
             json.dump([report], file, indent=4)
 
-    with open(test_cases_path, 'w') as file:
-        json.dump(tests_list, file, indent=4)
 
-    # run cases
+def generate_command(args, test, work_dir):
+    script_parts = [os.path.abspath(args.tool)]
+    if "width" in test:
+        script_parts.append("-w {}".format(test["width"]))
+    if "complexity" in test:
+        script_parts.append("-c {}".format(test["complexity"]))
+    if "colorCorrectionMode" in test:
+        script_parts.append("-color {}".format(test["colorCorrectionMode"]))
+    if "renderer" in test:
+        script_parts.append("-r {}".format(test["renderer"]))
+    if "camera" in test:
+        script_parts.append("-cam {}".format(test["camera"]))
+    if "width" in test:
+        script_parts.append("-w {}".format(test["width"]))
+    if "start_frame" in test:
+        if "end_frame" in test:
+            if "step" in test:
+                script_parts.append("-f {}:{}x{}".format(test["start_frame"], test["end_frame"], test["step"]))
+            else:
+                script_parts.append("-f {}:{}".format(test["start_frame"], test["end_frame"]))
+        else:
+            script_parts.append("-f {}".format(test["start_frame"]))
+    script_parts.append(os.path.normpath(os.path.join(args.scene_path, test['scene_sub_path'])))
+    if "start_frame" in test or "end_frame" in test:
+        key = "end_frame" if "end_frame" in test else "start_frame"
+        target_image_name = os.path.join(work_dir, 
+            "img{}.{}".format(str(math.floor(test[key])).rjust(5, "0"), str(test[key] % 1).ljust(5, "0")) + test["file_ext"])
+        script_parts.append(os.path.join(work_dir, "img#####.#####" + test["file_ext"]))
+    else:
+        target_image_name = "img" + test["file_ext"]
+        script_parts.append(os.path.join(work_dir, target_image_name))
+
+    return " ".join(script_parts), target_image_name
+
+
+def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
     for test in [x for x in tests_list if x['status'] == 'active' and not is_case_skipped(x, current_conf)]:
         main_logger.info("\nProcessing test case: {}".format(test['name']))
+
+        # build script for run current test case
+        script, target_image_name = generate_command(args, test, work_dir)
+        cmd_script_path = os.path.join(work_dir, "script.bat")
+        with open(cmd_script_path, "w") as f:
+            f.write(script)
 
         i = 0
         test_case_status = TEST_CRASH_STATUS
         while i < args.retries and test_case_status == TEST_CRASH_STATUS:
             main_logger.info("Try #" + str(i))
             i += 1
-            # build script for run current test case
-            script_parts = [args.tool]
-            if "width" in test:
-                script_parts.append("-w {}".format(test["width"]))
-            if "complexity" in test:
-                script_parts.append("-c {}".format(test["complexity"]))
-            if "colorCorrectionMode" in test:
-                script_parts.append("-color {}".format(test["colorCorrectionMode"]))
-            if "renderer" in test:
-                script_parts.append("-r {}".format(test["renderer"]))
-            if "camera" in test:
-                script_parts.append("-cam {}".format(test["camera"]))
-            if "width" in test:
-                script_parts.append("-w {}".format(test["width"]))
-            if "start_frame" in test:
-                if "end_frame" in test:
-                    if "step" in test:
-                        script_parts.append("-f {}:{}x{}".format(test["start_frame"], test["end_frame"], test["step"]))
-                    else:
-                        script_parts.append("-f {}:{}".format(test["start_frame"], test["end_frame"]))
-                else:
-                    script_parts.append("-f {}".format(test["start_frame"]))
-            script_parts.append(os.path.normpath(os.path.join(args.scene_path, test['scene_sub_path'])))
-            if "start_frame" in test or "end_frame" in test:
-                key = "end_frame" if "end_frame" in test else "start_frame"
-                target_image_name = os.path.join(work_dir, 
-                    "img{}.{}".format(str(math.floor(test[key])).rjust(5, "0"), str(test[key] % 1).ljust(5, "0")) + test["file_ext"])
-                script_parts.append(os.path.join("img#####.#####" + test["file_ext"]))
-            else:
-                target_image_name = "img" + test["file_ext"]
-                script_parts.append(os.path.join(work_dir, target_image_name))
-
-            script = " ".join(script_parts)
-
-            cmd_script_path = os.path.join(work_dir, "script.bat")
-            with open(cmd_script_path, "w") as f:
-                f.write(script)
 
             p = psutil.Popen(cmd_script_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
             stderr, stdout = b"", b""
@@ -229,9 +199,7 @@ def main():
 
             found_images = get_images_list(work_dir)
 
-            log_path = os.path.join(work_dir ,"render_tool_logs", test["name"] + ".log")
-
-            with open(log_path, 'a') as file:
+            with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), 'a') as file:
                 file.write("-----[TRY #{}]------\n\n".format(i - 1))
                 file.write("-----[STDOUT]------\n\n")
                 file.write(stdout.decode("UTF-8"))
@@ -247,14 +215,14 @@ def main():
                 except OSError as err:
                     main_logger.error(str(err))
 
-        # Update test case status
+        # Read and update test case status
         with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "r") as file:
             test_case_report = json.loads(file.read())[0]
             if error_messages:
                 test_case_report["message"] = test_case_report["message"] + error_messages
             test_case_report["test_status"] = test_case_status
             test_case_report["render_time"] = render_time
-            test_case_report["render_log"] = log_path
+            test_case_report["render_log"] = os.path.join("render_tool_logs", test["name"] + ".log")
             test_case_report["group_timeout_exceeded"] = False
             test_case_report["testcase_timeout_exceeded"] = aborted_by_timeout
             test_case_report["testing_start"] = datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
@@ -265,6 +233,49 @@ def main():
         test["status"] = test_case_status
         with open(test_cases_path, "w") as file:
             json.dump(tests_list, file, indent=4)
+
+
+def main():
+    args = create_args_parser()
+
+    work_dir = os.path.abspath(args.output_dir)
+
+    if not os.path.exists(os.path.join(args.output_dir, "Color")):
+        os.makedirs(os.path.join(args.output_dir, "Color"))
+    if not os.path.exists(os.path.join(args.output_dir, "render_tool_logs")):
+        os.makedirs(os.path.join(args.output_dir, "render_tool_logs"))
+
+    try:
+        test_cases_path = os.path.realpath(os.path.join(work_dir, 'test_cases.json'))
+        shutil.copyfile(args.tests_list, test_cases_path)
+    except Exception as e:
+        main_logger.error("Can't copy test_cases.json")
+        main_logger.error(str(e))
+        exit(-1)
+
+    try:
+        with open(test_cases_path, 'r') as file:
+            tests_list = json.load(file)
+    except OSError as e:
+        main_logger.error("Failed to read test cases json. ")
+        main_logger.error(str(e))
+        exit(-1)
+
+    render_device = get_gpu()
+    system_pl = platform.system()
+    current_conf = set(platform.system()) if not render_device else {platform.system(), render_device}
+    main_logger.info("Detected GPUs: {}".format(render_device))
+    main_logger.info("PC conf: {}".format(current_conf))
+    main_logger.info("Creating predefined errors json...")
+
+    # save pre-defined reports with error status
+    prepare_cases(args, tests_list, render_device, current_conf)
+
+    with open(test_cases_path, 'w') as file:
+        json.dump(tests_list, file, indent=4)
+
+    # run cases
+    execute_cases(args, tests_list, test_cases_path, current_conf, work_dir)
 
     return 0
 
