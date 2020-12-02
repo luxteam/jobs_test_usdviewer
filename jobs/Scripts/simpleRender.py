@@ -191,7 +191,7 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
                             os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"]))
                 test_case_status = TEST_SUCCESS_STATUS
             except FileNotFoundError as err:
-                image_not_found_str = "Image {} not found".format(target_image_name)
+                image_not_found_str = "Image {} not found".format(os.path.basename(target_image_name))
                 error_messages.append(image_not_found_str)
                 main_logger.error(image_not_found_str)
                 main_logger.error(str(err))
