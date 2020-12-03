@@ -9,7 +9,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 1000",
             "jpg"
@@ -27,7 +26,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 600",
             "jpg"
@@ -45,7 +43,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 1300",
             "jpg"
@@ -63,7 +60,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 4000",
             "jpg"
@@ -81,7 +77,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 1000",
             "png"
@@ -99,7 +94,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 600",
             "png"
@@ -117,7 +111,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 1300",
             "png"
@@ -135,7 +128,6 @@
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
-        "camera": 1,
         "script_info": [
             "Width - 4000",
             "png"

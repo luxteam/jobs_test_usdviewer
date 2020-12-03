@@ -7,7 +7,6 @@
         <argument>--tool "{Tool}"</argument>
         <argument>--tests_list "{Root}/Tests/Engine/test_cases.json"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
-        <argument>--render_engine RPR</argument>
         <argument>--scene_path "{ScenesDir}"</argument>
         <argument>--test_group Engine</argument>
         <argument>--retries {retries}</argument>

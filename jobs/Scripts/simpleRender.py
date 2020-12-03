@@ -24,7 +24,6 @@ def create_args_parser():
     parser.add_argument('--tool', required=True, metavar="<path>")
     parser.add_argument('--tests_list', required=True, metavar="<path>")
     parser.add_argument('--output_dir', required=True)
-    parser.add_argument('--render_engine', required=True)
     parser.add_argument('--scene_path', required=True)
     parser.add_argument('--test_group', required=True)
     parser.add_argument('--retries', required=False, default=2, type=int)
