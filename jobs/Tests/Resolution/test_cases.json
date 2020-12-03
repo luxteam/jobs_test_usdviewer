@@ -1,0 +1,147 @@
+[
+    {
+        "name": "RS_VIEW_R_001",
+        "status": "active",
+        "file_ext": ".jpg",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 1000,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 1000",
+            "jpg"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_002",
+        "status": "active",
+        "file_ext": ".jpg",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 600,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 600",
+            "jpg"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_003",
+        "status": "active",
+        "file_ext": ".jpg",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 1300,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 1300",
+            "jpg"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_004",
+        "status": "active",
+        "file_ext": ".jpg",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 4000,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 4000",
+            "jpg"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_005",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 1000,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 1000",
+            "png"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_006",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 600,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 600",
+            "png"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_007",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 1300,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 1300",
+            "png"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_R_008",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "width": 4000,
+        "colorCorrectionMode": "sRGB",
+        "renderer": "GL",
+        "start_frame": 1,
+        "camera": 1,
+        "script_info": [
+            "Width - 4000",
+            "png"
+        ],
+        "skip_on": [
+        ]
+    }
+
+]
