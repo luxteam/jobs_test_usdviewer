@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
-<job-manifest name="ColorCorrection">
+<job-manifest name="Color_Correction">
 
     <outpath value="{OutputDir}"/>
 
     <execute command='python "{ResourcesDir}/simpleRender.py"'>
         <argument>--tool "{Tool}"</argument>
-        <argument>--tests_list "{Root}/Tests/ColorCorrection/test_cases.json"</argument>
+        <argument>--tests_list "{Root}/Tests/Color_Correction/test_cases.json"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--scene_path "{ScenesDir}"</argument>
-        <argument>--test_group ColorCorrection</argument>
+        <argument>--test_group Color_Correction</argument>
         <argument>--retries {retries}</argument>
         <argument>--update_refs "{UpdateRefs}"</argument>
     </execute>
