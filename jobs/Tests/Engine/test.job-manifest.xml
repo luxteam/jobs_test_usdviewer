@@ -9,7 +9,7 @@
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--render_engine RPR</argument>
         <argument>--scene_path "{ScenesDir}"</argument>
-        <argument>--test_group Kitchen</argument>
+        <argument>--test_group Engine</argument>
         <argument>--retries {retries}</argument>
         <argument>--update_refs "{UpdateRefs}"</argument>
     </execute>
