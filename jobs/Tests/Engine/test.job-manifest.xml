@@ -5,7 +5,7 @@
 
     <execute command='python "{ResourcesDir}/simpleRender.py"'>
         <argument>--tool "{Tool}"</argument>
-        <argument>--tests_list "{Root}/Tests/Kitchen/test_cases.json"</argument>
+        <argument>--tests_list "{Root}/Tests/Engine/test_cases.json"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--render_engine RPR</argument>
         <argument>--scene_path "{ScenesDir}"</argument>
