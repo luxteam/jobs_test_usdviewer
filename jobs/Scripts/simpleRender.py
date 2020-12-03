@@ -151,7 +151,7 @@ def generate_command(args, test, work_dir):
 
 def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
     for test in [x for x in tests_list if x['status'] == 'active' and not is_case_skipped(x, current_conf)]:
-        main_logger.info("\nProcessing test case: {}".format(test['name']))
+        main_logger.info("Processing test case: {}".format(test['name']))
 
         # build script for run current test case
         script, target_image_name = generate_command(args, test, work_dir)
