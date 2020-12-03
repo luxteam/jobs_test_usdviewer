@@ -2,7 +2,7 @@
     {
         "name": "RS_VIEW_ENG_001",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "low",
@@ -17,7 +17,7 @@
     {
         "name": "RS_VIEW_ENG_002",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "medium",
@@ -32,7 +32,7 @@
     {
         "name": "RS_VIEW_ENG_003",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "high",
@@ -47,7 +47,7 @@
     {
         "name": "RS_VIEW_ENG_004",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "veryhigh",
@@ -62,7 +62,7 @@
     {
         "name": "RS_VIEW_ENG_005",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "low",
@@ -77,7 +77,7 @@
     {
         "name": "RS_VIEW_ENG_006",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "medium",
@@ -92,7 +92,7 @@
     {
         "name": "RS_VIEW_ENG_007",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "high",
@@ -106,7 +106,7 @@
     {
         "name": "RS_VIEW_ENG_008",
         "status": "active",
-        "file_ext": ".jpg",
+        "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "complexity": "veryhigh",
