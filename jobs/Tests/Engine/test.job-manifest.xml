@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<job-manifest name="Kitchen">
+<job-manifest name="Engine">
 
     <outpath value="{OutputDir}"/>
 
