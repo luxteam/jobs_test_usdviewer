@@ -10,6 +10,7 @@ import datetime
 import platform
 import copy
 import math
+from PIL import Image
 from glob import glob
 from utils import is_case_skipped
 
@@ -186,8 +187,11 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
             render_time = time.time() - start_time
             error_messages = []
             try:
-                shutil.copyfile(os.path.join(work_dir, target_image_name),
-                            os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"]))
+                target_path = os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"])
+                shutil.copyfile(os.path.join(work_dir, target_image_name), target_path)
+                # check is image truncated or not
+                output_image = Image.open(target_path)
+                output_image.resize((64, 64), Image.ANTIALIAS)
                 test_case_status = TEST_SUCCESS_STATUS
             except FileNotFoundError as err:
                 image_not_found_str = "Image {} not found".format(os.path.basename(target_image_name))
@@ -195,6 +199,13 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
                 main_logger.error(image_not_found_str)
                 main_logger.error(str(err))
                 test_case_status = TEST_CRASH_STATUS
+            except OSError as err:
+                if 'image file is truncated' in str(err):
+                    file_is_truncated = "Output image is truncated"
+                    error_messages.append(file_is_truncated)
+                    main_logger.error(file_is_truncated)
+                    main_logger.error(str(err))
+                    test_case_status = TEST_DIFF_STATUS
 
             found_images = get_images_list(work_dir)
 
