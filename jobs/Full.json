@@ -1,6 +1,8 @@
 {
     "split":true,
     "groups":{
-        "Engine":""
+        "Engine":"",
+        "Color_Correction":"",
+        "Resolution":""
     }
 }
