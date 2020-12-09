@@ -3,7 +3,7 @@
         "name": "RS_VIEW_MAT_LIB_001",
         "status": "active",
         "file_ext": ".png",
-        "render_time": 300,
+        "render_time": 1200,
         "scene_sub_path": "Sphere_Glass_Solid_Green/Sphere_parametric_assembly.usda",
         "renderer": "RPR",
         "script_info": [
