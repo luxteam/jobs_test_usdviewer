@@ -4,10 +4,10 @@
         "status": "active",
         "file_ext": ".png",
         "render_time": 300,
-        "scene_sub_path": "Sphere_Glass_Green/Sphere_parametric_assembly.usda",
+        "scene_sub_path": "Sphere_Glass_Solid_Green/Sphere_parametric_assembly.usda",
         "renderer": "RPR",
         "script_info": [
-            "Glass Green"
+            "Material: Glass Solid Green"
         ],
         "skip_on": [
         ]
