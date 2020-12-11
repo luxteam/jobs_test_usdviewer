@@ -22,7 +22,10 @@ from jobs_launcher.core.system_info import get_gpu
 
 
 # dict of settings which must be set in usda file and merged with target scene
-USDA_SETTINGS = {"renderQuality": {"type": "token"}}
+USDA_SETTINGS = {
+    "renderQuality": {"type": "token"},
+    "renderMode": {"type": "token"}
+}
 
 
 def create_args_parser():
