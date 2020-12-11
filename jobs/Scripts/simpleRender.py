@@ -21,8 +21,8 @@ from jobs_launcher.core.config import *
 from jobs_launcher.core.system_info import get_gpu
 
 
-# list of settings which must be set in usda file and merged with target scene
-USDA_SETTINGS = ["renderQuality"]
+# dict of settings which must be set in usda file and merged with target scene
+USDA_SETTINGS = {"renderQuality": {"type": "token"}}
 
 
 def create_args_parser():
@@ -123,7 +123,7 @@ def generate_render_settings(args, test, target_dir):
     settings = []
     for key in test:
         if key in USDA_SETTINGS:
-            settings.append("token {key} = \"{value}\"".format(key=key, value=test[key]))
+            settings.append("{type} {key} = \"{value}\"".format(type=USDA_SETTINGS[key]["type"], key=key, value=test[key]))
     if settings:
         main_logger.info("Detected USDA render settings")
         with open(os.path.join(os.path.dirname(__file__), "baseSettings.usda")) as file:
