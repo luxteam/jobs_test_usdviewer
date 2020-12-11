@@ -10,6 +10,7 @@ import datetime
 import platform
 import copy
 import math
+import traceback
 from PIL import Image
 from glob import glob
 from utils import is_case_skipped
@@ -18,6 +19,10 @@ ROOT_DIR_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.
 sys.path.append(ROOT_DIR_PATH)
 from jobs_launcher.core.config import *
 from jobs_launcher.core.system_info import get_gpu
+
+
+# list of settings which must be set in usda file and merged with target scene
+USDA_SETTINGS = ["renderQuality"]
 
 
 def create_args_parser():
@@ -114,8 +119,75 @@ def prepare_cases(args, tests_list, render_device, current_conf):
             json.dump([report], file, indent=4)
 
 
+def generate_render_settings(args, test, target_dir):
+    settings = []
+    for key in test:
+        if key in USDA_SETTINGS:
+            settings.append("token {key} = \"{value}\"".format(key=key, value=test[key]))
+    if settings:
+        main_logger.info("Detected USDA render settings")
+        with open(os.path.join(os.path.dirname(__file__), "baseSettings.usda")) as file:
+            render_settings = file.read()
+        settings = ",\n        ".join(settings)
+        render_settings = render_settings.format(settings=settings)
+        if not os.path.exists(target_dir):
+            os.makedirs(target_dir)
+        settings_path = os.path.join(target_dir, "baseSettings.usda")
+        if os.path.exists(settings_path):
+            os.remove(settings_path)
+        with open(os.path.join(target_dir, "baseSettings.usda"), "w") as file:
+            file.write(render_settings)
+        main_logger.info("Filed with USDA render settings was saved")
+        return settings_path
+    return ""
+
+
+def merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path):
+    main_logger.info("Started merge scene and settings")
+    scene_path = os.path.join(merged_scene_dir, "merged_scene.usda")
+    if os.path.exists(scene_path):
+        os.remove(scene_path)
+    merge_script = "{usdstitch} {scene} {settings} --out {target}".format(usdstitch=args.tool.replace("usdrecord", "usdstitch"),
+        scene=os.path.join(args.scene_path, test["scene_sub_path"]), settings=render_settings_path, target=scene_path)
+    cmd_script_path = os.path.join(work_dir, "merge_script.bat")
+    with open(cmd_script_path, "w") as f:
+        f.write(merge_script)
+    p = psutil.Popen(cmd_script_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    stderr, stdout = b"", b""
+    try:
+        stdout, stderr = p.communicate(timeout=120)
+    except (TimeoutError, psutil.TimeoutExpired, subprocess.TimeoutExpired) as err:
+        main_logger.error("Merge of scene and settings was aborted by timeout")
+        for child in reversed(p.children(recursive=True)):
+            child.terminate()
+        p.terminate()
+        stdout, stderr = p.communicate()
+        aborted_by_timeout = True
+
+    with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), "a") as file:
+        file.write("-----[MERGE SCENE AND SETTINGS (USDSTITCH STDOUT)]------\n\n")
+        file.write(stdout.decode("UTF-8"))
+        file.write("\n-----[MERGE SCENE AND SETTINGS (USDSTITCH STDERR)]-----\n\n")
+        file.write(stderr.decode("UTF-8"))
+        file.write("\n\n")
+
+    main_logger.info("Scene and settings were merged")
+
+    return scene_path
+
+
 def generate_command(args, test, work_dir):
     script_parts = [os.path.abspath(args.tool)]
+
+    merged_scene_dir = os.path.join(args.scene_path, os.path.split(test["scene_sub_path"])[0])
+    render_settings_path = generate_render_settings(args, test, merged_scene_dir)
+    # check has current case render settings or not
+    if render_settings_path:
+        scene_path = merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path)
+        script_parts.append("--renderSettings \"/Render/PrimarySettings\"")
+    else:
+        scene_path = os.path.normpath(os.path.join(args.scene_path, test['scene_sub_path']))
+
     if "width" in test:
         script_parts.append("-w {}".format(test["width"]))
     if "complexity" in test:
@@ -136,7 +208,7 @@ def generate_command(args, test, work_dir):
                 script_parts.append("-f {}:{}".format(test["start_frame"], test["end_frame"]))
         else:
             script_parts.append("-f {}".format(test["start_frame"]))
-    script_parts.append(os.path.normpath(os.path.join(args.scene_path, test['scene_sub_path'])))
+    script_parts.append(scene_path)
     if "start_frame" in test or "end_frame" in test:
         key = "end_frame" if "end_frame" in test else "start_frame"
         target_image_name = os.path.join(work_dir, 
@@ -153,15 +225,26 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
     for test in [x for x in tests_list if x['status'] == 'active' and not is_case_skipped(x, current_conf)]:
         main_logger.info("Processing test case: {}".format(test['name']))
 
+        error_messages = []
+        test_case_prepared = False
+
         # build script for run current test case
-        script, target_image_name = generate_command(args, test, work_dir)
-        cmd_script_path = os.path.join(work_dir, "script.bat")
-        with open(cmd_script_path, "w") as f:
-            f.write(script)
+        try:
+            script, target_image_name = generate_command(args, test, work_dir)
+            cmd_script_path = os.path.join(work_dir, "script.bat")
+            with open(cmd_script_path, "w") as f:
+                f.write(script)
+            test_case_prepared = True
+        except Exception as e:
+            error_messages.append("Failed to prepare test case")
+            main_logger.error("Failed to prepare test case. Exception: {}".format(str(e)))
+            main_logger.error("Traceback: {}".format(traceback.format_exc()))
 
         i = 0
+        render_time = -0.0
         test_case_status = TEST_CRASH_STATUS
-        while i < args.retries and test_case_status == TEST_CRASH_STATUS:
+        aborted_by_timeout = False
+        while test_case_prepared and i < args.retries and test_case_status == TEST_CRASH_STATUS:
             main_logger.info("Try #" + str(i))
             i += 1
 
@@ -170,7 +253,6 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
             start_time = time.time()
             test_case_status = TEST_CRASH_STATUS
 
-            aborted_by_timeout = False
             try:
                 stdout, stderr = p.communicate(timeout=test["render_time"])
             except (TimeoutError, psutil.TimeoutExpired, subprocess.TimeoutExpired) as err:
@@ -185,7 +267,6 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
                 test_case_status = TEST_SUCCESS_STATUS
 
             render_time = time.time() - start_time
-            error_messages = []
             try:
                 target_path = os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"])
                 shutil.copyfile(os.path.join(work_dir, target_image_name), target_path)
@@ -211,11 +292,11 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
 
             with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), 'a') as file:
                 file.write("-----[TRY #{}]------\n\n".format(i - 1))
-                file.write("-----[STDOUT]------\n\n")
+                file.write("-----[MERGE SCENE AND SETTINGS (USDRECORD STDOUT)]------\n\n")
                 file.write(stdout.decode("UTF-8"))
                 file.write("\n-----[FOUND IMAGES]-----\n")
                 file.write(str(found_images))
-                file.write("\n-----[STDERR]-----\n\n")
+                file.write("\n-----[MERGE SCENE AND SETTINGS (USDRECORD STDERR)]-----\n\n")
                 file.write(stderr.decode("UTF-8"))
                 file.write("\n\n")
 
