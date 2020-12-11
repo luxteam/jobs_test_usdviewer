@@ -137,7 +137,7 @@ def generate_render_settings(args, test, target_dir):
             os.remove(settings_path)
         with open(os.path.join(target_dir, "baseSettings.usda"), "w") as file:
             file.write(render_settings)
-        main_logger.info("Filed with USDA render settings was saved")
+        main_logger.info("File with USDA render settings was saved")
         return settings_path
     return ""
 
@@ -198,8 +198,6 @@ def generate_command(args, test, work_dir):
         script_parts.append("-r {}".format(test["renderer"]))
     if "camera" in test:
         script_parts.append("-cam {}".format(test["camera"]))
-    if "width" in test:
-        script_parts.append("-w {}".format(test["width"]))
     if "start_frame" in test:
         if "end_frame" in test:
             if "step" in test:
@@ -292,11 +290,11 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
 
             with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), 'a') as file:
                 file.write("-----[TRY #{}]------\n\n".format(i - 1))
-                file.write("-----[MERGE SCENE AND SETTINGS (USDRECORD STDOUT)]------\n\n")
+                file.write("-----[RENDER (USDRECORD STDOUT)]------\n\n")
                 file.write(stdout.decode("UTF-8"))
                 file.write("\n-----[FOUND IMAGES]-----\n")
                 file.write(str(found_images))
-                file.write("\n-----[MERGE SCENE AND SETTINGS (USDRECORD STDERR)]-----\n\n")
+                file.write("\n-----[RENDER (USDRECORD STDERR)]-----\n\n")
                 file.write(stderr.decode("UTF-8"))
                 file.write("\n\n")
 
