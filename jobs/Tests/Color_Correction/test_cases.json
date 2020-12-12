@@ -5,12 +5,12 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
         "colorCorrectionMode": "sRGB",
         "renderer": "GL",
         "start_frame": 1,
         "script_info": [
-            "GL: sRGB"
+            "GL",
+            "sRGB"
         ],
         "skip_on": [
         ]
@@ -21,12 +21,12 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
         "colorCorrectionMode": "openColorIO",
         "renderer": "GL",
         "start_frame": 1,
         "script_info": [
-            "GL: openColorIO"
+            "GL",
+            "openColorIO"
         ],
         "skip_on": [
         ]
@@ -37,12 +37,12 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
         "colorCorrectionMode": "disabled",
         "renderer": "GL",
         "start_frame": 1,
         "script_info": [
-            "GL: disabled"
+            "GL",
+            "disabled"
         ],
         "skip_on": [
         ]
@@ -53,13 +53,13 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
-        "colorCorrectionMode": "openColorIO",
+        "renderQuality": "Full",
         "colorCorrectionMode": "sRGB",
-        "renderer": "GL",
+        "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "GL: disabled"
+            "RPR Full (Tahoe)",
+            "sRGB"
         ],
         "skip_on": [
         ]
@@ -70,12 +70,13 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
+        "renderQuality": "Northstar",
         "colorCorrectionMode": "sRGB",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "RPR: sRGB"
+            "RPR Northstar",
+            "sRGB"
         ],
         "skip_on": [
         ]
@@ -86,12 +87,13 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
+        "renderQuality": "Full",
         "colorCorrectionMode": "openColorIO",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "RPR: openColorIO"
+            "RPR Full (Tahoe)",
+            "openColorIO"
         ],
         "skip_on": [
         ]
@@ -102,12 +104,13 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
-        "colorCorrectionMode": "disabled",
+        "renderQuality": "Northstar",
+        "colorCorrectionMode": "openColorIO",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "RPR: disabled"
+            "RPR Northstar",
+            "openColorIO"
         ],
         "skip_on": [
         ]
@@ -118,18 +121,32 @@
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
-        "colorCorrectionMode": "openColorIO",
-        "colorCorrectionMode": "sRGB",
+        "renderQuality": "Full",
+        "colorCorrectionMode": "disabled",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "RPR: disabled"
+            "RPR Full (Tahoe)",
+            "disabled"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_CC_009",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
+        "renderQuality": "Northstar",
+        "colorCorrectionMode": "disabled",
+        "renderer": "RPR",
+        "start_frame": 1,
+        "script_info": [
+            "RPR Northstar",
+            "disabled"
         ],
         "skip_on": [
         ]
     }
-
-
-
 ]
