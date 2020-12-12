@@ -129,18 +129,24 @@ def generate_render_settings(args, test, target_dir):
             settings.append("{type} {key} = \"{value}\"".format(type=USDA_SETTINGS[key]["type"], key=key, value=test[key]))
     if settings:
         main_logger.info("Detected USDA render settings")
-        with open(os.path.join(os.path.dirname(__file__), "baseSettings.usda")) as file:
-            render_settings = file.read()
-        settings = ",\n        ".join(settings)
-        render_settings = render_settings.format(settings=settings)
-        if not os.path.exists(target_dir):
-            os.makedirs(target_dir)
-        settings_path = os.path.join(target_dir, "baseSettings.usda")
-        if os.path.exists(settings_path):
-            os.remove(settings_path)
-        with open(os.path.join(target_dir, "baseSettings.usda"), "w") as file:
-            file.write(render_settings)
-        main_logger.info("File with USDA render settings was saved")
+        try:
+            with open(os.path.join(os.path.dirname(__file__), "baseSettings.usda")) as file:
+                render_settings = file.read()
+            settings = ",\n        ".join(settings)
+            render_settings = render_settings.format(settings=settings)
+        except Exception as e:
+            raise Exception("Failed to build USDA render settings") from e
+        try:
+            if not os.path.exists(target_dir):
+                os.makedirs(target_dir)
+            settings_path = os.path.join(target_dir, "baseSettings.usda")
+            if os.path.exists(settings_path):
+                os.remove(settings_path)
+            with open(os.path.join(target_dir, "baseSettings.usda"), "w") as file:
+                file.write(render_settings)
+            main_logger.info("File with USDA render settings was saved")
+        except Exception as e:
+            raise Exception("Failed to save USDA render settings") from e
         return settings_path
     return ""
 
@@ -148,16 +154,16 @@ def generate_render_settings(args, test, target_dir):
 def merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path):
     main_logger.info("Started merge scene and settings")
     scene_path = os.path.join(merged_scene_dir, "merged_scene.usda")
-    if os.path.exists(scene_path):
-        os.remove(scene_path)
-    merge_script = "{usdstitch} {scene} {settings} --out {target}".format(usdstitch=args.tool.replace("usdrecord", "usdstitch"),
-        scene=os.path.join(args.scene_path, test["scene_sub_path"]), settings=render_settings_path, target=scene_path)
-    cmd_script_path = os.path.join(work_dir, "merge_script.bat")
-    with open(cmd_script_path, "w") as f:
-        f.write(merge_script)
-    p = psutil.Popen(cmd_script_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-    stderr, stdout = b"", b""
     try:
+        if os.path.exists(scene_path):
+            os.remove(scene_path)
+        merge_script = "{usdstitch} {scene} {settings} --out {target}".format(usdstitch=args.tool.replace("usdrecord", "usdstitch"),
+            scene=os.path.join(args.scene_path, test["scene_sub_path"]), settings=render_settings_path, target=scene_path)
+        cmd_script_path = os.path.join(work_dir, "merge_script.bat")
+        with open(cmd_script_path, "w") as f:
+            f.write(merge_script)
+        p = psutil.Popen(cmd_script_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+        stderr, stdout = b"", b""
         stdout, stderr = p.communicate(timeout=120)
     except (TimeoutError, psutil.TimeoutExpired, subprocess.TimeoutExpired) as err:
         main_logger.error("Merge of scene and settings was aborted by timeout")
@@ -166,6 +172,8 @@ def merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path):
         p.terminate()
         stdout, stderr = p.communicate()
         aborted_by_timeout = True
+    except Exception as e:
+        raise Exception("Failed to merge scene and settings") from e
 
     with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), "a") as file:
         file.write("-----[MERGE SCENE AND SETTINGS (USDSTITCH STDOUT)]------\n\n")
@@ -237,7 +245,7 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
                 f.write(script)
             test_case_prepared = True
         except Exception as e:
-            error_messages.append("Failed to prepare test case")
+            error_messages.append(e.message)
             main_logger.error("Failed to prepare test case. Exception: {}".format(str(e)))
             main_logger.error("Traceback: {}".format(traceback.format_exc()))
 
