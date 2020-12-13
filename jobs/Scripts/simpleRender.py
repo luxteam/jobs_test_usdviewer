@@ -94,7 +94,6 @@ def prepare_cases(args, tests_list, render_device, current_conf):
                        'test_group': args.test_group,
                        'render_color_path': os.path.join('Color', test['case'] + test['file_ext']),
                        'width': test.get('width', 960),
-                       'complexity': test.get('complexity', 'low'),
                        'colorCorrectionMode': test.get('colorCorrectionMode', 'sRGB'),
                        'renderer': test.get('renderer', ''),
                        'start_frame': test.get('start_frame', ''),
@@ -201,8 +200,6 @@ def generate_command(args, test, work_dir):
 
     if "width" in test:
         script_parts.append("-w {}".format(test["width"]))
-    if "complexity" in test:
-        script_parts.append("-c {}".format(test["complexity"]))
     if "colorCorrectionMode" in test:
         script_parts.append("-color {}".format(test["colorCorrectionMode"]))
     if "renderer" in test:
