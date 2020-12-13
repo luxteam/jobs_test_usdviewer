@@ -1,6 +1,6 @@
 [
     {
-        "name": "RS_VIEW_R_001",
+        "case": "RS_VIEW_R_001",
         "status": "active",
         "file_ext": ".jpg",
         "render_time": 120,
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_002",
+        "case": "RS_VIEW_R_002",
         "status": "active",
         "file_ext": ".jpg",
         "render_time": 120,
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_003",
+        "case": "RS_VIEW_R_003",
         "status": "active",
         "file_ext": ".jpg",
         "render_time": 120,
@@ -51,7 +51,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_004",
+        "case": "RS_VIEW_R_004",
         "status": "active",
         "file_ext": ".jpg",
         "render_time": 120,
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_005",
+        "case": "RS_VIEW_R_005",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_006",
+        "case": "RS_VIEW_R_006",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
@@ -102,7 +102,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_007",
+        "case": "RS_VIEW_R_007",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
@@ -119,7 +119,7 @@
         ]
     },
     {
-        "name": "RS_VIEW_R_008",
+        "case": "RS_VIEW_R_008",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,

@@ -49,10 +49,10 @@ def get_images_list(work_dir):
 
 def copy_baselines(test, baseline_path, baseline_path_tr):
     try:
-        shutil.copyfile(os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX),
-                 os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX))
+        shutil.copyfile(os.path.join(baseline_path_tr, test['case'] + CASE_REPORT_SUFFIX),
+                 os.path.join(baseline_path, test['case'] + CASE_REPORT_SUFFIX))
 
-        with open(os.path.join(baseline_path, test['name'] + CASE_REPORT_SUFFIX)) as baseline:
+        with open(os.path.join(baseline_path, test['case'] + CASE_REPORT_SUFFIX)) as baseline:
             baseline_json = json.load(baseline)
 
         for thumb in [''] + THUMBNAIL_PREFIXES:
@@ -61,7 +61,7 @@ def copy_baselines(test, baseline_path, baseline_path_tr):
                          os.path.join(baseline_path, baseline_json[thumb + 'render_color_path']))
     except:
         main_logger.error('Failed to copy baseline ' +
-                                      os.path.join(baseline_path_tr, test['name'] + CASE_REPORT_SUFFIX))
+                                      os.path.join(baseline_path_tr, test['case'] + CASE_REPORT_SUFFIX))
 
 
 def prepare_cases(args, tests_list, render_device, current_conf):
@@ -82,17 +82,17 @@ def prepare_cases(args, tests_list, render_device, current_conf):
         test_status = TEST_IGNORE_STATUS if is_skipped else TEST_CRASH_STATUS
 
         main_logger.info("Case: {}; Skip here: {}; Predefined status: {};".format(
-            test['name'], bool(is_skipped), test_status
+            test['case'], bool(is_skipped), test_status
         ))
         report.update({'test_status': test_status,
                        'render_device': render_device,
-                       'test_case': test['name'],
+                       'test_case': test['case'],
                        'scene_name': test['scene_sub_path'],
                        'tool': 'USDViewer',
-                       'file_name': test['name'] + test['file_ext'],
+                       'file_name': test['case'] + test['file_ext'],
                        'script_info': test['script_info'],
                        'test_group': args.test_group,
-                       'render_color_path': os.path.join('Color', test['name'] + test['file_ext']),
+                       'render_color_path': os.path.join('Color', test['case'] + test['file_ext']),
                        'width': test.get('width', 960),
                        'complexity': test.get('complexity', 'low'),
                        'colorCorrectionMode': test.get('colorCorrectionMode', 'sRGB'),
@@ -114,11 +114,11 @@ def prepare_cases(args, tests_list, render_device, current_conf):
         try:
             shutil.copyfile(
                 os.path.join(ROOT_DIR_PATH, 'jobs_launcher', 'common', 'img', report['test_status'] + test['file_ext']),
-                os.path.join(args.output_dir, 'Color', test['name'] + test['file_ext']))
+                os.path.join(args.output_dir, 'Color', test['case'] + test['file_ext']))
         except (OSError, FileNotFoundError) as err:
             main_logger.error("Can't create img stub: {}".format(str(err)))
 
-        with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "w") as file:
+        with open(os.path.join(args.output_dir, test["case"] + CASE_REPORT_SUFFIX), "w") as file:
             json.dump([report], file, indent=4)
 
 
@@ -175,7 +175,7 @@ def merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path):
     except Exception as e:
         raise Exception("Failed to merge scene and settings") from e
 
-    with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), "a") as file:
+    with open(os.path.join(work_dir, "render_tool_logs", test["case"] + ".log"), "a") as file:
         file.write("-----[MERGE SCENE AND SETTINGS (USDSTITCH STDOUT)]------\n\n")
         file.write(stdout.decode("UTF-8"))
         file.write("\n-----[MERGE SCENE AND SETTINGS (USDSTITCH STDERR)]-----\n\n")
@@ -232,7 +232,7 @@ def generate_command(args, test, work_dir):
 
 def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
     for test in [x for x in tests_list if x['status'] == 'active' and not is_case_skipped(x, current_conf)]:
-        main_logger.info("Processing test case: {}".format(test['name']))
+        main_logger.info("Processing test case: {}".format(test['case']))
 
         error_messages = []
         test_case_prepared = False
@@ -277,7 +277,7 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
 
             render_time = time.time() - start_time
             try:
-                target_path = os.path.join(args.output_dir, "Color", test["name"] + test["file_ext"])
+                target_path = os.path.join(args.output_dir, "Color", test["case"] + test["file_ext"])
                 shutil.copyfile(os.path.join(work_dir, target_image_name), target_path)
                 # check is image truncated or not
                 output_image = Image.open(target_path)
@@ -299,7 +299,7 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
 
             found_images = get_images_list(work_dir)
 
-            with open(os.path.join(work_dir, "render_tool_logs", test["name"] + ".log"), 'a') as file:
+            with open(os.path.join(work_dir, "render_tool_logs", test["case"] + ".log"), 'a') as file:
                 file.write("-----[TRY #{}]------\n\n".format(i - 1))
                 file.write("-----[RENDER (USDRECORD STDOUT)]------\n\n")
                 file.write(stdout.decode("UTF-8"))
@@ -316,18 +316,18 @@ def execute_cases(args, tests_list, test_cases_path, current_conf, work_dir):
                     main_logger.error(str(err))
 
         # Read and update test case status
-        with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "r") as file:
+        with open(os.path.join(args.output_dir, test["case"] + CASE_REPORT_SUFFIX), "r") as file:
             test_case_report = json.loads(file.read())[0]
             if error_messages:
                 test_case_report["message"] = test_case_report["message"] + error_messages
             test_case_report["test_status"] = test_case_status
             test_case_report["render_time"] = render_time
-            test_case_report["render_log"] = os.path.join("render_tool_logs", test["name"] + ".log")
+            test_case_report["render_log"] = os.path.join("render_tool_logs", test["case"] + ".log")
             test_case_report["group_timeout_exceeded"] = False
             test_case_report["testcase_timeout_exceeded"] = aborted_by_timeout
             test_case_report["testing_start"] = datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 
-        with open(os.path.join(args.output_dir, test["name"] + CASE_REPORT_SUFFIX), "w") as file:
+        with open(os.path.join(args.output_dir, test["case"] + CASE_REPORT_SUFFIX), "w") as file:
             json.dump([test_case_report], file, indent=4)
 
         test["status"] = test_case_status
