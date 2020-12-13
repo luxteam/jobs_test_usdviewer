@@ -132,7 +132,7 @@ def generate_render_settings(args, test, target_dir):
         try:
             with open(os.path.join(os.path.dirname(__file__), "baseSettings.usda")) as file:
                 render_settings = file.read()
-            settings = ",\n        ".join(settings)
+            settings = "\n        ".join(settings)
             render_settings = render_settings.format(settings=settings)
         except Exception as e:
             raise Exception("Failed to build USDA render settings") from e
