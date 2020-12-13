@@ -3,6 +3,7 @@
     "groups":{
         "Engine":"",
         "Color_Correction":"",
-        "Resolution":""
+        "Resolution":"",
+        "Render_Mode":""
     }
 }
