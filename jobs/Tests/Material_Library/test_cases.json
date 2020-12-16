@@ -1,0 +1,3916 @@
+[
+    {
+        "name": "RS_VIEW_MAT_LIB_001",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BarnFindOrange_Solid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Barn Find Orange Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_002",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BasketCaseBlueSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Basket Case Blue Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_003",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BeachBumAquaMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Beach Bum Aqua Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_004",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BlueBayou Solid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Blue Bayou Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_005",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BoulevardBlackSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Boulevard Black Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_006",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/BurnOutBlueMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Burn Out Blue Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_007",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CandyPantsVioletMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Candy Pants Violet Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_008",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CarPaintMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Car Paint Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_009",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CarPaintPearlescent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Car Paint Pearlescent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_010",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CarPaintSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Car Paint Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_011",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/ChampagneMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Champagne Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_012",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CherryGumballSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Cherry Gumball Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_013",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/ChopTopSilverMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Chop Top Silver Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_014",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/CruiseNightBlueMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Cruise Night Blue Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_015",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/DesertedTanFlat.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Deserted Tan Flat"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_016",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/EastwoodBluePearlPearlescent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Eastwood Blue Pearl Pearlescent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_017",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/EastwoodRoyalBlueMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Eastwood Royal Blue Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_018",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/ElectricYellowSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Electric Yellow Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_019",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/EuroRacingGreenMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Euro Racing Green Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_020",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/EyeCandyGreenSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Eye Candy Green Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_021",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/GasserGreen_Pearlescent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Gasser Green Pearlescent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_022",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/HuggingOrangeSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Hugging Orange Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_023",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/LimeSqueezinGreenSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Lime Squeezin Green Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_024",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/MalibuSunsetGreenPearlescent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Malibu Sunset Green Pearlescent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_025",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/OrangeUBadSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Orange U Bad Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_026",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/PinupRedSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Pinup Red Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_027",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/PlumCrazyMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Plum Crazy Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_028",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/ProStreetRedSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Pro Street Red Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_029",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/PureWhiteSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Pure White Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_030",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/QuaterMileCandyRedSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Quater Mile Candy Red Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_031",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/RatRodblackSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Rat Rodblack Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_032",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/ReprileRed Solid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Reprile Red Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_033",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/RodzBerryMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Rodz Berry Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_034",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/RottenLimeGreenSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Rotten Lime Green Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_035",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/SaltWaterTaffyTealMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Salt Water Taffy Teal Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_036",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/StraightAxleRedPearlPearlescent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Straight Axle Red Pearl Pearlescent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_037",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/SugarCoatltGoldMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Sugar Coatlt Gold Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_038",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/TequilaLimeNGoldSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Tequila Lime N Gold Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_039",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/TunnelRamGrayMetallic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Tunnel Ram Gray Metallic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_040",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/USABrightWhiteFlatSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - USA Bright White Flat Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_041",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/USABrightWhiteSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - USA Bright White Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_042",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "CarPaints/VinoRojoSolid.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Car Paint - Vino Rojo Solid"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_043",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Composites/CarbonFiber.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Composites - Carbon Fiber"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_044",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Composites/CarbonFiberGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Composites - Carbon Fiber Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_045",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Composites/CarbonFiberGlossyCoat.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Composites - Carbon Fiber Glossy Coat"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_046",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Composites/CarbonFiberSemiGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Composites - Carbon Fiber Semi Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_047",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Composites/FiberGlass.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Composites - Fiber Glass"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_048",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcreteBrickCracksGrey.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Brick Cracks Grey"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_049",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcretePaintedCracks.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Painted Cracks"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_050",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcretePaintedRough.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Painted Rough"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_051",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcreteStone.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Stone"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_052",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcreteTiles.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Tiles"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_053",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcreteWornBare.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Worn Bare"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_054",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Concrete/ConcreteWornBareSmoothBump.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Concrete - Concrete Worn Bare Smooth Bump"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_055",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Emissive/EmissiveCoolLight.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Emissive - Emissive Cool Light"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_056",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Emissive/EmissiveFluorescentCyan.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Emissive - Emissive Fluorescent Cyan"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_057",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Emissive/EmissiveFluorescentMagneta.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Emissive - Emissive Fluorescent Magneta"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_058",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Emissive/EmissiveFluorescentWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Emissive - Emissive Fluorescent White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_059",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Emissive/EmissiveFluorescentYellow.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Emissive - Emissive Fluorescent Yellow"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_060",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/AluminiumAdonized.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Aluminium Adonized"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_061",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/AluminiumDirectional.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Aluminium Directional"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_062",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/AluminiumOxidiazed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Aluminium Oxidiazed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_063",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/AluminiumPolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Aluminium Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_064",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/AluminiumSandBlasted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Aluminium Sand Blasted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_065",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BrassCartridge.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Brass Cartridge"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_066",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BrassMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Brass Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_067",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BrassOxidiazed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Brass Oxidiazed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_068",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BrassPatinated.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Brass Patinated"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_069",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BrassStandart.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Brass Standart"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_070",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BronzeCorrision.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Bronze Corrision"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_071",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BronzeMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Bronze Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_072",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BronzeOxidized.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Bronze Oxidized"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_073",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BronzePolished2.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Bronze Polished2"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_074",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/BronzeRough.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Bronze Rough"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_075",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/ChromeDusty.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Chrome Dusty"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_076",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/ChromeMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Chrome Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_077",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/ChromeSandblasted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Chrome Sandblasted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_078",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/ChromeScratched.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Chrome Scratched"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_079",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/CopperBrushed2.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Copper Brushed2"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_080",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/CopperDented.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Copper Dented"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_081",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/CopperOld.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Copper Old"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_082",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/CopperWrought.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Copper Wrought"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_083",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/Generic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Generic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_084",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/Gold.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Gold"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_085",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/GoldFoilRough.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Gold Foil Rough"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_086",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/GoldPaint.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Gold Paint"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_087",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/GoldPaintCracked.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Gold Paint Cracked"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_088",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/GoldRough.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Gold Rough"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_089",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/IronHammered.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Iron Hammered"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_090",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/IronOxidized.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Iron Oxidized"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_091",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/IronRugged.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Iron Rugged"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_092",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/IronSmooth.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Iron Smooth"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_093",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/IronWorn.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Iron Worn"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_094",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/LeadRough.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Lead Rough"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_095",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/LeadRusted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Lead Rusted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_096",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/LeadSandblasted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Lead Sandblasted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_097",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/LeadSmooth.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Lead Smooth"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_098",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/SteelBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Steel Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_099",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/SteelGalvanized.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Steel Galvanized"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_100",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/SteelOxidized.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Steel Oxidized"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_101",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/SteelSmooth.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Steel Smooth"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_102",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "ExtendedMetals/SteelWorn.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Extended Metals - Steel Worn"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_103",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fabric/FabricMatteSolidBeige.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fabric - Fabric Matte Solid Beige"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_104",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fabric/FabricMatteSolidRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fabric - Fabric Matte Solid Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_105",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fabric/FabricMatteTransparentBeige.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fabric - Fabric Matte Transparent Beige"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_106",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fabric/FabricMatteTrasnparentRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fabric - Fabric Matte Trasnparent Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_107",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fabric/FabricSilk.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fabric - Fabric Silk"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_108",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Fur/FurCarpetDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Fur - Fur Carpet Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_109",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/Glassantique.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass antique"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_110",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassCarBreakLight.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Car Break Light"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_111",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassCarHeadLight.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Car Head Light"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_112",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassCarIndicatorLight.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Car Indicator Light"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_113",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassClearWindow.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Clear Window"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_114",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_115",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidBrown.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Brown"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_116",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidClear.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Clear"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_117",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidClearScratched.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Clear Scratched"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_118",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidFrosted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Frosted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_119",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_120",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidGreenBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Green Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_121",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidGreenBlueScratched.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Green Blue Scratched"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_122",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_123",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidTinted.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Tinted"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_124",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassSolidYellow.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Solid Yellow"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_125",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassThinBronze.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Thin Bronze"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_126",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassThinGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Thin Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_127",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassTintedDark.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Tinted Dark"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_128",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/GlassUsed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Glass Used"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_129",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Glass/Mirror.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Glass - Mirror"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_130",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Ground/GroundDark.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Ground - Ground Dark"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_131",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Ground/GroundDarkDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Ground - Ground Dark Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_132",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Ground/GroundGrass.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Ground - Ground Grass"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_133",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Ground/GroundGrassCutDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Ground - Ground Grass Cut Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_134",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Ground/GroundGrassDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Ground - Ground Grass Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_135",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Jewels/JewelsDiamond.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Jewels - Jewels Diamond"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_136",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Jewels/JewelsEmerald.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Jewels - Jewels Emerald"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_137",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Jewels/JewelsRuby.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Jewels - Jewels Ruby"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_138",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Leather/LeatherBeige.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Leather - Leather Beige"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_139",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Leather/LeatherBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Leather - Leather Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_140",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Leather/LeatherBrown.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Leather - Leather Brown"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_141",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Liquid/LiquidsAlcoholChampagne.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Liquid - Liquids Alcohol Champagne"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_142",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Liquid/WaterTransparent.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Liquid - Water Transparent"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_143",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Liquid/WaterTransparentBump.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Liquid - Water Transparent Bump"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_144",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Liquid/WaterTransparentDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Liquid - Water Transparent Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_145",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_146",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_147",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintDarkGrey.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Dark Grey"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_148",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintIceSilver.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Ice Silver"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_149",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintIndyYellow.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Indy Yellow"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_150",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintInferno.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Inferno"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_151",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintJasmineGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Jasmine Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_152",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintLapisBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Lapis Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_153",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintLavaRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Lava Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_154",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintNorthGrey.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint North Grey"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_155",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintTungsten.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Tungsten"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_156",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintVenetianRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Venetian Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_157",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintVibrantViolet.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Vibrant Violet"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_158",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/CarPaintWildernessGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Car Paint Wilderness Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_159",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/MetallicPaintMatteRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Metallic Paint MatteRed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_160",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/MetallicPaintRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Metallic Paint Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_161",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/MetallicPaintSilver.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Metallic Paint Silver"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_162",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/ScratchedMetallicPaintRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Scratched Metallic Paint Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_163",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "MetallicPaint/ScratchedMetallicPaintYellow.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metallic Paint - Scratched Metallic Paint Yellow"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_164",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/AluminiumBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Aluminium Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_165",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/AluminiumCast.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Aluminium Cast"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_166",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/AluminiumCorrugated.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Aluminium Corrugated"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_167",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/AluminiumMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Aluminium Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_168",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/BrassBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Brass Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_169",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/BrassPolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Brass Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_170",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/BrassSatin.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Brass Satin"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_171",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/CastIron.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Cast Iron"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_172",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/Chrome.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Chrome"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_173",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/CopperBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Copper Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_174",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/CopperPolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Copper Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_175",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/CopperSatin.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Copper Satin"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_176",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/GalvanizedSteel.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Galvanized Steel"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_177",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/GunMetal.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Gun Metal"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_178",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/Mercury.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Mercury"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_179",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/MetalPlate.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Metal Plate"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_180",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/RustMetal.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Rust Metal"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_181",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/StainlessSteel.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Stainless Steel"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_182",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Metals/StainlessSteelBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Metals - Stainless Steel Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_183",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellLaserLemon.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Laser Lemon"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_184",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellSleekWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Sleek White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_185",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellSunValley.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Sun Valley"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_186",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellTanzanite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Tanzanite"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_187",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellTartOrange.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Tart Orange"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_188",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintEggShellTropicalSea.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Egg Shell Tropical Sea"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_189",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatLaserLemon.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Laser Lemon"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_190",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatSleekWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Sleek White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_191",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatSunValley.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Sun Valley"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_192",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatTanzanite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Tanzanite"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_193",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatTartOrange.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Tart Orange"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_194",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatTawnyDayLily.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Tawny Day Lily"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_195",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatTropicalSea.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Tropical Sea"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_196",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintFlatVoilePink.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Flat Voile Pink"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_197",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossyLaserLemon.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Laser Lemon"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_198",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossySleekWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Sleek White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_199",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossySunValley.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Sun Valley"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_200",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossyTanzanite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Tanzanite"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_201",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossyTartOrange.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Tart Orange"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_202",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Paint/PaintGlossyTropicalSea.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Paint - Paint Glossy Tropical Sea"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_203",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/PlasticGlossyBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Plastic Glossy Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_204",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/PlasticGlossyRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Plastic Glossy Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_205",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/PlasticMatteBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Plastic Matte Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_206",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/PlasticMatteRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Plastic Matte Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_207",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/PlasticMatteWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Plastic Matte White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_208",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Plastic/Styrofoam.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Plastic - Styrofoam"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_209",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_210",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_211",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainCrackedwhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain Cracked white"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_212",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainMatteWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain Matte White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_213",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainNewWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain New White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_214",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainOldWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain Old White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_215",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Porcelain/PorcelainWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Porcelain - Porcelain White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_216",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/BronzeBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Bronze Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_217",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/BronzePolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Bronze Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_218",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/BronzeSatin.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Bronze Satin"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_219",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/GoldBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Gold Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_220",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/GoldPolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Gold Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_221",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/GoldSatin.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Gold Satin"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_222",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/SilverBrushed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Silver Brushed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_223",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/SilverPolished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Silver Polished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_224",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "PreciousMetals/SilverSatin.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Precious Metals - Silver Satin"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_225",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickBasicV2.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Basic V2"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_226",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickColorDisplacement.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Color Displacement"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_227",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickDamage.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Damage"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_228",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickIrregular.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Irregular"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_229",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickNaturalV1.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Natural V1"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_230",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickOldV2.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Old V2"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_231",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/BrickOldV3.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Brick Old V3"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_232",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneCladding.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Cladding"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_233",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneGranitBWB.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Granit BWB"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_234",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarbleBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_235",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarbleBlueMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Blue Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_236",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarbleGrey.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Grey"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_237",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarblePink.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Pink"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_238",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarblePinkMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Pink Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_239",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneMarbleYellowMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Marble Yellow Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_240",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderStone/StoneRoughMarble.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Stone - Stone Rough Marble"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_241",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/FloorCeramicTilesChecker.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Floor Ceramic Tiles Checker"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_242",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/FloorCeramicTilesColor.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Floor Ceramic Tiles Color"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_243",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/FloorCeramicTilesColorVariation8x8.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Floor Ceramic Tiles Color Variation 8x8"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_244",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/FloorTilesRusticColor4x4.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Floor Tiles Rustic Color 4x4"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_245",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingBeigeMarble.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling Beige Marble"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_246",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingBlueCheckered.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling Blue Checkered"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_247",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingBlueMarble.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling Blue Marble"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_248",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingCheckered.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling Checkered"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_249",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingOld.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling Old"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_250",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingWhite.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling White"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_251",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "RenderTiles/TilingWhiteMarble.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Render Tiles - Tiling White Marble"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_252",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Roofing/RoofingClayShinglesBeige.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Roofing - Roofing Clay Shingles Beige"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_253",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Roofing/RoofingCorrugatedIron.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Roofing - Roofing Corrugated Iron"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_254",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Roofing/RoofingRedClayTiles.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Roofing - Roofing Red Clay Tiles"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_255",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberBumpy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Bumpy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_256",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberDiamonds.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Diamonds"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_257",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberRibbed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Ribbed"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_258",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothClear.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Clear"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_259",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothMatte.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Matte"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_260",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothMatteBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Matte Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_261",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothMatteBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Matte Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_262",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothMatteGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Matte Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_263",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothMatteRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Matte Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_264",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothShiny.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Shiny"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_265",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothShinyBlack.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Shiny Black"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_266",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothShinyBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Shiny Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_267",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothShinyGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Shiny Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_268",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberSmoothShinyRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Smooth Shiny Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_269",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Rubber/RubberUsed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Rubber - Rubber Used"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_270",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveGlossyGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Glossy Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_271",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveGlossyNeonGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Glossy Neon Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_272",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveGlossyNeonOrange.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Glossy Neon Orange"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_273",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveGlossyRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Glossy Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_274",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveMatteGreen.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Matte Green"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_275",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicRefractiveMatteRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Refractive Matte Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_276",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicTransparentGlossyRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Transparent Glossy Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_277",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/AcrylicTransparentMatteRed.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Acrylic Transparent Matte Red"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_278",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/PlasticTransparentSolidClearBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Plastic Transparent Solid Clear Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_279",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "TransparentPlastic/PlasticTransparentThinClearBlue.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Transparent Plastic - Plastic Transparent Thin Clear Blue"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_280",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Volumes/ColoredGlass.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Volumes - Colored Glass"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_281",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Volumes/jade.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Volumes - jade"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_282",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Volumes/Milk.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Volumes - Milk"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_283",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Volumes/Wax.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Volumes - Wax"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_284",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodBark.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Bark"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_285",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodBeechGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Beech Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_287",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodCedarGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Cedar Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_288",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodCedarUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Cedar Unfinished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_289",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodClearRustic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Clear Rustic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_290",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodMahoganyGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Mahogany Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_291",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodMahoganyUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Mahogany Unfinished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_292",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodMapleGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Maple Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_293",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodMapleUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Maple Unfinished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_294",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodNaturalMaple.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Natural Maple"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_295",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodOakGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Oak Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_296",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodOakUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Oak Unfinished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_297",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodPlanksOakGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Planks Oak Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_298",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodPlanksOakUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Planks Oak Unfinished"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_299",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodRustic.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Rustic"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_300",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodRusticCherry.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Rustic Cherry"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_301",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodWengeGlossy.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Wenge Glossy"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "name": "RS_VIEW_MAT_LIB_302",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 1200,
+        "scene_sub_path": "Wood/WoodWengeUnfinished.usd",
+        "renderer": "RPR",
+        "script_info": [
+            "Material: Wood - Wood Wenge Unfinished"
+        ],
+        "skip_on": [
+        ]
+    }
+
+]
