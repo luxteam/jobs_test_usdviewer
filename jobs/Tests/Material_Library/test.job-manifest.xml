@@ -3,7 +3,7 @@
 
     <outpath value="{OutputDir}"/>
 
-    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="7200">
+    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="16200">
         <argument>--tool "{Tool}"</argument>
         <argument>--tests_list "{Root}/Tests/Material_Library/test_cases.json"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
