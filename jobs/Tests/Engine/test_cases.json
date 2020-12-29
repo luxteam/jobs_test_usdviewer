@@ -1,11 +1,11 @@
 [
     {
-        "name": "RS_VIEW_ENG_001",
+        "case": "RS_VIEW_ENG_001",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "low",
+        "renderQuality": "Low",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
@@ -15,12 +15,12 @@
         ]
     },
     {
-        "name": "RS_VIEW_ENG_002",
+        "case": "RS_VIEW_ENG_002",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "medium",
+        "renderQuality": "Medium",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
@@ -30,12 +30,12 @@
         ]
     },
     {
-        "name": "RS_VIEW_ENG_003",
+        "case": "RS_VIEW_ENG_003",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "high",
+        "renderQuality": "High",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
@@ -45,79 +45,47 @@
         ]
     },
     {
-        "name": "RS_VIEW_ENG_004",
+        "case": "RS_VIEW_ENG_004",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
+        "renderQuality": "Full",
         "renderer": "RPR",
         "start_frame": 1,
         "script_info": [
-            "RPR Very High"
+            "RPR Full (Tahoe)"
         ],
         "skip_on": [
         ]
     },
     {
-        "name": "RS_VIEW_ENG_005",
+        "case": "RS_VIEW_ENG_005",
         "status": "active",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "low",
+        "renderQuality": "Northstar",
+        "renderer": "RPR",
+        "start_frame": 1,
+        "script_info": [
+            "RPR Northstar"
+        ],
+        "skip_on": [
+        ]
+    },
+    {
+        "case": "RS_VIEW_ENG_006",
+        "status": "active",
+        "file_ext": ".png",
+        "render_time": 120,
+        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
         "renderer": "GL",
         "start_frame": 1,
         "script_info": [
-            "GL Low"
-        ],
-        "skip_on": [
-        ]
-    },
-    {
-        "name": "RS_VIEW_ENG_006",
-        "status": "active",
-        "file_ext": ".png",
-        "render_time": 120,
-        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "medium",
-        "renderer": "GL",
-        "start_frame": 1,
-        "script_info": [
-            "GL Medium"
-        ],
-        "skip_on": [
-        ]
-    },
-    {
-        "name": "RS_VIEW_ENG_007",
-        "status": "active",
-        "file_ext": ".png",
-        "render_time": 120,
-        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "high",
-        "renderer": "GL",
-        "script_info": [
-            "GL High"
-        ],
-        "skip_on": [
-        ]
-    },
-    {
-        "name": "RS_VIEW_ENG_008",
-        "status": "active",
-        "file_ext": ".png",
-        "render_time": 120,
-        "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
-        "complexity": "veryhigh",
-        "renderer": "GL",
-        "start_frame": 1,
-        "script_info": [
-            "GL Very High"
+            "GL"
         ],
         "skip_on": [
         ]
     }
-
-
 ]
