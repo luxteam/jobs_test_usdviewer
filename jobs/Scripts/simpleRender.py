@@ -156,7 +156,7 @@ def merge_assets(args, test, work_dir, merged_scene_dir, render_settings_path):
     try:
         if os.path.exists(scene_path):
             os.remove(scene_path)
-        merge_script = "{usdstitch} {scene} {settings} --out {target}".format(usdstitch=args.tool.replace("usdrecord", "usdstitch"),
+        merge_script = "{usdstitch} \"{scene}\" \"{settings}\" --out \"{target}\"".format(usdstitch=args.tool.replace("usdrecord", "usdstitch"),
             scene=os.path.join(args.scene_path, test["scene_sub_path"]), settings=render_settings_path, target=scene_path)
         cmd_script_path = os.path.join(work_dir, "merge_script.bat")
         with open(cmd_script_path, "w") as f:
@@ -214,7 +214,7 @@ def generate_command(args, test, work_dir):
                 script_parts.append("-f {}:{}".format(test["start_frame"], test["end_frame"]))
         else:
             script_parts.append("-f {}".format(test["start_frame"]))
-    script_parts.append(scene_path)
+    script_parts.append("\"{}\"".format(scene_path))
     if "start_frame" in test or "end_frame" in test:
         key = "end_frame" if "end_frame" in test else "start_frame"
         target_image_name = os.path.join(work_dir, 
