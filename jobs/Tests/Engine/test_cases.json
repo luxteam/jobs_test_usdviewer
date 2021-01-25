@@ -16,7 +16,7 @@
     },
     {
         "case": "RS_VIEW_ENG_002",
-        "status": "active",
+        "status": "skipped",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
@@ -31,7 +31,7 @@
     },
     {
         "case": "RS_VIEW_ENG_003",
-        "status": "active",
+        "status": "skipped",
         "file_ext": ".png",
         "render_time": 120,
         "scene_sub_path": "Kitchen_set/Kitchen_set.usd",
